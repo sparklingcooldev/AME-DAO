@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { t, Trans } from "@lingui/macro";
 import { FormControl, Grid, MenuItem, Select, Typography } from "@mui/material";
 import { Skeleton } from "@mui/material";

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { t, Trans } from "@lingui/macro";
 import {
   Box,

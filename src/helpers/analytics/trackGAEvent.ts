@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import ReactGA from "react-ga";
 import GA4 from "react-ga4";
 import { Environment } from "src/helpers/environment/Environment/Environment";

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import "src/components/TopBar/TopBar.scss";
 
 import { i18n } from "@lingui/core";

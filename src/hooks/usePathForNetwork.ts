@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 import { NavigateFunction } from "react-router-dom";
 import { NetworkId, VIEWS_FOR_NETWORK } from "src/constants";

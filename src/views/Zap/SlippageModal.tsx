@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Trans } from "@lingui/macro";
 import { Box, Dialog, DialogTitle, FormControl, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";

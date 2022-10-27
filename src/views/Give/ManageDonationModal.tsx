@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { isAddress } from "@ethersproject/address";
 import { t, Trans } from "@lingui/macro";
 import { ChevronLeft } from "@mui/icons-material";

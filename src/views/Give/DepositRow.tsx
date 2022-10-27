@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "src/views/Give/YieldRecipients.scss";
 
 import { t } from "@lingui/macro";

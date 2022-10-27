@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "react-step-progress-bar/styles.css";
 // We import this AFTER the styles for react-step-progress-bar, so that we can override it
 import "src/components/GiveProject/GrantCard.scss";

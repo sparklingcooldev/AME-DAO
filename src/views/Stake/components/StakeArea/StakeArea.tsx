@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { t } from "@lingui/macro";
 import { Box, Divider, Grid } from "@mui/material";
 import { MetricCollection, Paper } from "@olympusdao/component-library";

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /**
  * Assertion function helpful for asserting `enabled`
  * values from within a `react-query` function.

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { StaticJsonRpcProvider } from "@ethersproject/providers";
 // import { Environment } from "src/helpers/environment/Environment/Environment";
 import { NetworkId } from "src/networkDetails";

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "src/components/Messages/ConsoleInterceptor";
 
 import { AlertProps, LinearProgress, Snackbar } from "@mui/material";

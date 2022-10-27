@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import "@rainbow-me/rainbowkit/styles.css";
 
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";

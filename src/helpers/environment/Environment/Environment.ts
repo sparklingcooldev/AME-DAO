@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { NetworkId } from "src/networkDetails";
 
 export class Environment {

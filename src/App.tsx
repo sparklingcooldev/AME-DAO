@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import "src/style.scss";
 
 import { useMediaQuery } from "@mui/material";
@@ -113,7 +115,7 @@ function App() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const { address = "", isConnected, isReconnecting } = useAccount();
+  const { address = "", isConnected } = useAccount();
   const { error: errorMessage } = useConnect();
 
   const provider = useProvider();
@@ -127,25 +129,6 @@ function App() {
   const isSmallerScreen = useMediaQuery("(max-width: 980px)");
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
-  async function loadDetails(whichDetails: string) {
-    // NOTE (unbanksy): If you encounter the following error:
-    // Unhandled Rejection (Error): call revert exception (method="balanceOf(address)", errorArgs=null, errorName=null, errorSignature=null, reason=null, code=CALL_EXCEPTION, version=abi/5.4.0)
-    // it's because the initial provider loaded always starts with networkID=1. This causes
-    // address lookup on the wrong chain which then throws the error. To properly resolve this,
-    // we shouldn't be initializing to networkID=1 in web3Context without first listening for the
-    // network. To actually test rinkeby, change setnetworkID equal to 4 before testing.
-    const loadProvider = provider;
-
-    if (whichDetails === "app") {
-      loadApp(loadProvider);
-    }
-
-    // don't run unless provider is a Wallet...
-    if (whichDetails === "account" && address && isConnected) {
-      loadAccount(loadProvider);
-    }
-  }
-
   const loadApp = useCallback(
     loadProvider => {
       dispatch(loadAppDetails({ networkID: chain.id, provider: loadProvider }));
@@ -153,13 +136,10 @@ function App() {
     [chain.id, address],
   );
 
-  const loadAccount = useCallback(
-    loadProvider => {
-      dispatch(loadAccountDetails({ networkID: chain.id, provider, address }));
-      dispatch(getMigrationAllowances({ address, provider, networkID: chain.id }));
-    },
-    [chain.id, address],
-  );
+  const loadAccount = useCallback(() => {
+    dispatch(loadAccountDetails({ networkID: chain.id, provider, address }));
+    dispatch(getMigrationAllowances({ address, provider, networkID: chain.id }));
+  }, [chain.id, address]);
 
   // The next 3 useEffects handle initializing API Loads AFTER wallet is checked
   //

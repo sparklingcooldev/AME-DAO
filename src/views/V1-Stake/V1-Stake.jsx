@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import "src/views/Stake/Stake.scss";
 import "src/views/V1-Stake/V1-Stake.scss";
 

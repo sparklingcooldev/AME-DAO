@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 import ReactGA from "react-ga";
 import GA4 from "react-ga4";

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "src/components/GiveProject/ProjectCard.scss";
 
 import { t, Trans } from "@lingui/macro";

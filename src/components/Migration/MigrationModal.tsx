@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react-hooks/exhaustive-deps */
 import "src/components/Migration/MigrationModal.scss";
 
 import { t, Trans } from "@lingui/macro";

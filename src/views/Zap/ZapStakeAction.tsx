@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { t, Trans } from "@lingui/macro";
 import {
   Avatar,
