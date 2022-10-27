@@ -65,7 +65,7 @@ const NavContent: React.VFC = () => {
                     <Divider />
                   </Box>
 
-                  <NavItem href="https://pro.olympusdao.finance/" icon="olympus" label={t`Olympus Pro`} />
+                  <NavItem href="https://pro.olympusdao.finance/" icon="olympus" label={t`AEM Pro`} />
 
                   <Box className="menu-divider">
                     <Divider />
@@ -79,33 +79,33 @@ const NavContent: React.VFC = () => {
                 </>
               )}
 
-              <NavItem href="https://forum.olympusdao.finance/" icon="forum" label={t`Forum`} />
+              <NavItem href="#" icon="forum" label={t`Forum`} />
 
-              <NavItem href="https://vote.olympusdao.finance/" icon="governance" label={t`Governance`} />
+              <NavItem href="#" icon="governance" label={t`Governance`} />
 
-              <NavItem href="https://docs.olympusdao.finance/" icon="docs" label={t`Docs`} />
+              <NavItem href="#" icon="docs" label={t`Docs`} />
 
-              <NavItem href="https://immunefi.com/bounty/olympus/" icon="bug-report" label={t`Bug Bounty`} />
+              <NavItem href="#" icon="bug-report" label={t`Bug Bounty`} />
 
-              <NavItem href="https://grants.olympusdao.finance/" icon="grants" label={t`Grants`} />
+              <NavItem href="#" icon="grants" label={t`Grants`} />
             </div>
           </div>
         </div>
 
         <StyledBox display="flex" justifyContent="space-between" paddingX="50px" paddingY="24px">
-          <Link href="https://github.com/OlympusDAO" target="_blank" rel="noopener noreferrer">
+          <Link href="#" target="_blank" rel="noopener noreferrer">
             <Icon name="github" className={classes.gray} />
           </Link>
 
-          <Link href="https://olympusdao.medium.com/" target="_blank" rel="noopener noreferrer">
+          <Link href="#" target="_blank" rel="noopener noreferrer">
             <Icon name="medium" className={classes.gray} />
           </Link>
 
-          <Link href="https://twitter.com/OlympusDAO" target="_blank" rel="noopener noreferrer">
+          <Link href="#" target="_blank" rel="noopener noreferrer">
             <Icon name="twitter" className={classes.gray} />
           </Link>
 
-          <Link href="https://discord-invite.olympusdao.finance" target="_blank" rel="noopener noreferrer">
+          <Link href="#" target="_blank" rel="noopener noreferrer">
             <Icon name="discord" className={classes.gray} />
           </Link>
         </StyledBox>
