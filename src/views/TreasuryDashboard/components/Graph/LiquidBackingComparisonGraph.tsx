@@ -194,17 +194,17 @@ export const LiquidBackingPerOhmComparisonGraph = ({
     setDataKeys(tempDataKeys);
 
     const itemNames: string[] = isActiveTokenOHM
-      ? [t`OHM Price`, t`Liquid Backing per Floating OHM`]
-      : [t`gOHM Price`, t`Liquid Backing per gOHM`];
+      ? [t`AME Price`, t`Liquid Backing per Floating AME`]
+      : [t`gAME Price`, t`Liquid Backing per gAME`];
 
     setCategoriesMap(getCategoriesMap(itemNames, tempDataKeys));
     setBulletpointStylesMap(getBulletpointStylesMap(DEFAULT_BULLETPOINT_COLOURS, tempDataKeys));
     setColorsMap(getDataKeyColorsMap(DEFAULT_COLORS, tempDataKeys));
-    setHeaderText(isActiveTokenOHM ? t`OHM Backing` : t`gOHM Backing`);
+    setHeaderText(isActiveTokenOHM ? t`AME Backing` : t`gAME Backing`);
     setTooltipText(
       isActiveTokenOHM
-        ? t`This chart compares the price of OHM against its liquid backing. When OHM is above liquid backing, the difference will be highlighted in green. Conversely, when OHM is below liquid backing, the difference will be highlighted in red.`
-        : t`This chart compares the price of gOHM against its liquid backing. When gOHM is above liquid backing, the difference will be highlighted in green. Conversely, when gOHM is below liquid backing, the difference will be highlighted in red.`,
+        ? t`This chart compares the price of AME against its liquid backing. When AME is above liquid backing, the difference will be highlighted in green. Conversely, when AME is below liquid backing, the difference will be highlighted in red.`
+        : t`This chart compares the price of gAME against its liquid backing. When gAME is above liquid backing, the difference will be highlighted in green. Conversely, when gAME is below liquid backing, the difference will be highlighted in red.`,
     );
   }, [isActiveTokenOHM]);
 

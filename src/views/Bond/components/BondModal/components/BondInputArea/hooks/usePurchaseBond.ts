@@ -25,7 +25,7 @@ export const usePurchaseBond = (bond: Bond) => {
   const client = useQueryClient();
   const networks = useTestableNetworks();
   const { data: signer } = useSigner();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { address = "" } = useAccount();
   const balance = useBalance(bond.quoteToken.addresses)[networks.MAINNET].data;
 

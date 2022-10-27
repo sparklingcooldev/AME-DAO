@@ -14,7 +14,7 @@ import { useAccount, useNetwork } from "wagmi";
 
 const Zap: React.FC = () => {
   const { isConnected } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const navigate = useNavigate();
   usePathForNetwork({ pathName: "zap", networkID: chain.id, navigate });
 

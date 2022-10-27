@@ -6,7 +6,7 @@ import { useNetwork } from "wagmi";
 
 export const WrapBalances = () => {
   const networks = useTestableNetworks();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const sohmBalance = useSohmBalance()[networks.MAINNET].data;
 
   const gohmBalances = useGohmBalance();

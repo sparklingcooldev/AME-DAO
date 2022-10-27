@@ -19,7 +19,7 @@ export const useOldRedeem = () => {
   const dispatch = useDispatch();
   const client = useQueryClient();
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const networks = useTestableNetworks();
   const contract = useDynamicV1GiveContract(OLD_GIVE_ADDRESSES, true);
 

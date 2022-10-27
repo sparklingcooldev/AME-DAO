@@ -4,7 +4,7 @@ import { useNetwork } from "wagmi";
 import { useAppSelector } from ".";
 
 export const useOldAssetsDetected = () => {
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   return useAppSelector(state => {
     if (chain.id && isChainEthereum({ chainId: chain.id, includeTestnets: true })) {

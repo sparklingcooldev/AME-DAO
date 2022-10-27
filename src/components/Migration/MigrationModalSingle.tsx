@@ -20,7 +20,7 @@ function MigrationModalSingle({ open, handleClose }: { open: boolean; handleClos
   const provider = useProvider();
   const { data: signer } = useSigner();
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   let rows = [];
   const onSeekApproval = (token: string) => {
@@ -68,7 +68,7 @@ function MigrationModalSingle({ open, handleClose }: { open: boolean; handleClos
 
   rows = [
     {
-      initialAsset: "OHM",
+      initialAsset: "AME",
       initialBalance: currentOhmBalance,
       targetAsset: targetAsset,
       targetBalance: ohmAsgOHM * targetMultiplier,
@@ -78,7 +78,7 @@ function MigrationModalSingle({ open, handleClose }: { open: boolean; handleClos
       display: gOHMPrice! * ohmAsgOHM > 10,
     },
     {
-      initialAsset: "sOHM",
+      initialAsset: "sAME",
       initialBalance: currentSOhmBalance,
       targetAsset: targetAsset,
       targetBalance: sOHMAsgOHM * targetMultiplier,
@@ -88,7 +88,7 @@ function MigrationModalSingle({ open, handleClose }: { open: boolean; handleClos
       display: gOHMPrice! * sOHMAsgOHM > 10,
     },
     {
-      initialAsset: "wsOHM",
+      initialAsset: "wsAME",
       initialBalance: currentWSOhmBalance,
       targetAsset: targetAsset,
       targetBalance: +currentWSOhmBalance * targetMultiplier,

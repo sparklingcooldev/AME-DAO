@@ -8,9 +8,10 @@ import { useNetwork, useSwitchNetwork } from "wagmi";
 export const WrapSwitchNetwork = () => {
   const networks = useTestableNetworks();
 
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { switchNetwork } = useSwitchNetwork();
   const isMainnet = chain.id === networks.MAINNET;
+  console.log("isMainnet", isMainnet);
   if (!isMainnet)
     return (
       <>

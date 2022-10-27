@@ -10,7 +10,6 @@ import {
   walletConnectWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 import { Chain, chain, configureChains, createClient } from "wagmi";
-import { alchemyProvider } from "wagmi/providers/alchemy";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import { publicProvider } from "wagmi/providers/public";
 
@@ -53,33 +52,8 @@ const fantom: Chain = {
   rpcUrls: { default: "https://rpc.fantom.network" },
 };
 export const { chains, provider, webSocketProvider } = configureChains(
-  [
-    chain.mainnet,
-    chain.polygon,
-    chain.optimism,
-    chain.arbitrum,
-    {
-      ...boba,
-      iconUrl:
-        "https://chainlist.org/_next/image?url=https%3A%2F%2Fdefillama.com%2Fchain-icons%2Frsz_boba.jpg&w=32&q=100",
-    },
-    {
-      ...avalanche,
-      iconUrl:
-        "https://chainlist.org/_next/image?url=https%3A%2F%2Fdefillama.com%2Fchain-icons%2Frsz_avalanche.jpg&w=32&q=100",
-    },
-    {
-      ...fantom,
-      iconUrl:
-        "https://chainlist.org/_next/image?url=https%3A%2F%2Fdefillama.com%2Fchain-icons%2Frsz_fantom.jpg&w=32&q=100",
-    },
-    chain.goerli,
-  ],
-  [
-    alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
-    jsonRpcProvider({ rpc: chain => ({ http: chain.rpcUrls.default }) }),
-    publicProvider(),
-  ],
+  [chain.mainnet],
+  [jsonRpcProvider({ rpc: chain => ({ http: chain.rpcUrls.default }) }), publicProvider()],
 );
 
 const needsInjectedWalletFallback =

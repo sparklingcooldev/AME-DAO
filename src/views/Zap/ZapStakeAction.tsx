@@ -73,7 +73,7 @@ type ZapQuantity = string | number | null;
 
 const ZapStakeAction: React.FC = () => {
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   const dispatch = useDispatch();
 

@@ -2,13 +2,13 @@ import { DecimalBigNumber } from "src/helpers/DecimalBigNumber/DecimalBigNumber"
 
 export const bondPurchaseTransaction = {
   token: {
-    name: "OHM",
+    name: "AME",
     addresses: {
       "1": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
       "4": "0xd7B98050962ec7cC8D11a83446B3217257C754B7",
     },
     _contractCache: {},
-    icons: ["OHM"],
+    icons: ["AME"],
     decimals: 9,
     purchaseUrl:
       "https://app.sushi.com/swap?inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f&outputCurrency=0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
@@ -135,7 +135,7 @@ export const bondPurchaseTransaction = {
           "0x0000000000000000000000009025046c6fb25fb39e720d97a8fd881ed69a1ef6",
         ],
         sender_contract_decimals: 18,
-        sender_name: "Governance OHM",
+        sender_name: "Governance AME",
         sender_contract_ticker_symbol: "gOHM",
         sender_address: "0x0ab87046fbb341d058f17cbc4c1133f25a20a52f",
         sender_address_label: null,
@@ -182,7 +182,7 @@ export const bondPurchaseTransaction = {
         ],
         sender_contract_decimals: 9,
         sender_name: "Olympus",
-        sender_contract_ticker_symbol: "OHM",
+        sender_contract_ticker_symbol: "AME",
         sender_address: "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
         sender_address_label: null,
         sender_logo_url: "https://logos.covalenthq.com/tokens/0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5.png",
@@ -228,7 +228,7 @@ export const bondPurchaseTransaction = {
         ],
         sender_contract_decimals: 9,
         sender_name: "Olympus",
-        sender_contract_ticker_symbol: "OHM",
+        sender_contract_ticker_symbol: "AME",
         sender_address: "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
         sender_address_label: null,
         sender_logo_url: "https://logos.covalenthq.com/tokens/0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5.png",
@@ -298,7 +298,7 @@ export const bondPurchaseTransaction = {
         ],
         sender_contract_decimals: 9,
         sender_name: "Olympus",
-        sender_contract_ticker_symbol: "OHM",
+        sender_contract_ticker_symbol: "AME",
         sender_address: "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
         sender_address_label: null,
         sender_logo_url: "https://logos.covalenthq.com/tokens/0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5.png",
@@ -386,13 +386,13 @@ export const bondPurchaseTransaction = {
 
 export const bondClaimTransaction = {
   token: {
-    name: "OHM",
+    name: "AME",
     addresses: {
       "1": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
       "4": "0xd7B98050962ec7cC8D11a83446B3217257C754B7",
     },
     _contractCache: {},
-    icons: ["OHM"],
+    icons: ["AME"],
     decimals: 9,
     purchaseUrl:
       "https://app.sushi.com/swap?inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f&outputCurrency=0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
@@ -427,7 +427,7 @@ export const bondClaimTransaction = {
           "0x0000000000000000000000008d7a5fedf55b68625b2e5953f8203b029cb9c44e",
         ],
         sender_contract_decimals: 18,
-        sender_name: "Governance OHM",
+        sender_name: "Governance AME",
         sender_contract_ticker_symbol: "gOHM",
         sender_address: "0x0ab87046fbb341d058f17cbc4c1133f25a20a52f",
         sender_address_label: null,
@@ -470,13 +470,13 @@ export const bondClaimTransaction = {
 
 export const supplyToFuseTransaction = {
   token: {
-    name: "OHM",
+    name: "AME",
     addresses: {
       "1": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
       "4": "0xd7B98050962ec7cC8D11a83446B3217257C754B7",
     },
     _contractCache: {},
-    icons: ["OHM"],
+    icons: ["AME"],
     decimals: 9,
     purchaseUrl:
       "https://app.sushi.com/swap?inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f&outputCurrency=0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
@@ -600,7 +600,7 @@ export const supplyToFuseTransaction = {
           "0x0000000000000000000000008d7a5fedf55b68625b2e5953f8203b029cb9c44e",
         ],
         sender_contract_decimals: 18,
-        sender_name: "Governance OHM",
+        sender_name: "Governance AME",
         sender_contract_ticker_symbol: "gOHM",
         sender_address: "0x0ab87046fbb341d058f17cbc4c1133f25a20a52f",
         sender_address_label: null,
@@ -694,13 +694,13 @@ export const supplyToFuseTransaction = {
 
 export const stakeTransaction = {
   token: {
-    name: "OHM",
+    name: "AME",
     addresses: {
       "1": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
       "4": "0xd7B98050962ec7cC8D11a83446B3217257C754B7",
     },
     _contractCache: {},
-    icons: ["OHM"],
+    icons: ["AME"],
     decimals: 9,
     purchaseUrl:
       "https://app.sushi.com/swap?inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f&outputCurrency=0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
@@ -736,7 +736,7 @@ export const stakeTransaction = {
           "0x00000000000000000000000039e606af0bd163cb87a33283e452a40829ab2297",
         ],
         sender_contract_decimals: 9,
-        sender_name: "Staked OHM",
+        sender_name: "Staked AME",
         sender_contract_ticker_symbol: "sOHM",
         sender_address: "0x04906695d6d12cf5459975d7c3c03356e4ccd460",
         sender_address_label: null,
@@ -782,7 +782,7 @@ export const stakeTransaction = {
           "0x0000000000000000000000000000000000000000000000000000000000000000",
         ],
         sender_contract_decimals: 18,
-        sender_name: "Governance OHM",
+        sender_name: "Governance AME",
         sender_contract_ticker_symbol: "gOHM",
         sender_address: "0x0ab87046fbb341d058f17cbc4c1133f25a20a52f",
         sender_address_label: null,
@@ -825,13 +825,13 @@ export const stakeTransaction = {
 
 export const unstakeTransaction = {
   token: {
-    name: "OHM",
+    name: "AME",
     addresses: {
       "1": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
       "4": "0xd7B98050962ec7cC8D11a83446B3217257C754B7",
     },
     _contractCache: {},
-    icons: ["OHM"],
+    icons: ["AME"],
     decimals: 9,
     purchaseUrl:
       "https://app.sushi.com/swap?inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f&outputCurrency=0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
@@ -868,7 +868,7 @@ export const unstakeTransaction = {
         ],
         sender_contract_decimals: 9,
         sender_name: "Olympus",
-        sender_contract_ticker_symbol: "OHM",
+        sender_contract_ticker_symbol: "AME",
         sender_address: "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
         sender_address_label: null,
         sender_logo_url: "https://logos.covalenthq.com/tokens/1/0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5.png",

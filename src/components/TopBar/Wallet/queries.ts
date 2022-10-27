@@ -85,7 +85,7 @@ export const transactionHistoryQueryKey = (options: UseTransactionHistoryOptions
 
 export const useTransactionHistory = () => {
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   return useInfiniteQuery<CovalentResponse<CovalentTransaction[]>, Error, Transaction[]>(
     [transactionHistoryQueryKey({ address, networkId: chain.id })],
@@ -121,7 +121,7 @@ export const transferHistoryQueryKey = (options: UseTransferHistoryOptions) => [
 
 export const useTransferHistory = <TToken extends Token>(token: TToken) => {
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const contractAddress = token.getAddress(chain.id);
 
   return useInfiniteQuery<CovalentResponse<CovalentTransfer[]>, Error, Transaction[]>(

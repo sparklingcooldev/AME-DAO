@@ -94,7 +94,7 @@ export const useDecreaseGive = () => {
   const dispatch = useDispatch();
   const client = useQueryClient();
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { data: signer } = useSigner();
   const networks = useTestableNetworks();
   const contract = useDynamicGiveContract(GIVE_ADDRESSES, true);

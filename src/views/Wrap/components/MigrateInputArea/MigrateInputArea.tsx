@@ -12,7 +12,7 @@ import { useNetwork } from "wagmi";
 
 export const MigrateInputArea = () => {
   const networks = useTestableNetworks();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   // Max balance stuff
   assert(

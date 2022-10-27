@@ -48,7 +48,7 @@ function V1Stake({ setMigrationModalOpen }) {
   const oldAssetsDetected = useOldAssetsDetected();
   const provider = useProvider();
   const { address = "", isConnected } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   const [zoomed, setZoomed] = useState(false);
   const [view, setView] = useState(0);

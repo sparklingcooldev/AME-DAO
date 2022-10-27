@@ -49,7 +49,7 @@ export const donationInfoQueryKey = (address: string, networkId: NetworkId) =>
 export const useDonationInfo = () => {
   const { address = "" } = useAccount();
   const provider = useProvider();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   // Establish contract
   const networks = useTestableNetworks();
@@ -156,7 +156,7 @@ export const redeemableBalanceQueryKey = (address: string, networkId: NetworkId)
  *                             can be redeemed (returned as gOHM)
  */
 export const useRedeemableBalance = (address: string) => {
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   // Establish contract
   const networks = useTestableNetworks();
@@ -197,7 +197,7 @@ export const v1RedeemableBalanceQueryKey = (address: string, networkId: NetworkI
   ["useV1RedeemableBalance", address, networkId].filter(nonNullable);
 
 export const useV1RedeemableBalance = () => {
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { address = "" } = useAccount();
 
   // Hook to establish static old Give contract
@@ -254,7 +254,7 @@ export const recipientInfoQueryKey = (address: string, networkId: NetworkId) =>
  *          gohmDebt: gOHM equivalent of sOHM debt
  */
 export const useRecipientInfo = (address: string) => {
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { data: signer } = useSigner();
   // Hook to establish dynamic contract, meaning it will connect to the network
   // the user is currently connected to
@@ -336,7 +336,7 @@ export const totalYieldDonatedQueryKey = (address: string, networkId: NetworkId)
  */
 export const useTotalYieldDonated = (address: string) => {
   const provider = useProvider();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   // Event logs use data values that are padded with zeros, so to match that we
   // pad the given wallet address with zeros
@@ -412,7 +412,7 @@ export const donorNumbersQueryKey = (address: string, networkId: NetworkId) =>
  * donor numbers
  */
 export const useDonorNumbers = (address: string) => {
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const provider = useProvider();
   // Event logs use data values that are padded with zeros, so to match that we
   // pad the given wallet address with zeros

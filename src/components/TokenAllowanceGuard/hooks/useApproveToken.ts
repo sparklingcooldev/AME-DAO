@@ -14,7 +14,7 @@ export const useApproveToken = (tokenAddressMap: AddressMap, spenderAddressMap: 
   const client = useQueryClient();
 
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const token = useDynamicTokenContract(tokenAddressMap, true);
 
   return useMutation<ContractReceipt, EthersError>(

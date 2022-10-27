@@ -88,7 +88,7 @@ const createDynamicContract = <TContract extends Contract = Contract>(ABI: Contr
   return (addressMap: AddressMap, asSigner = false) => {
     const provider = useProvider();
     const { data: signer } = useSigner();
-    const { chain = { id: 1 } } = useNetwork();
+    const { chain = { id: 180 } } = useNetwork();
 
     return useMemo(() => {
       const address = addressMap[chain.id as keyof typeof addressMap];

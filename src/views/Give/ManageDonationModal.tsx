@@ -64,7 +64,7 @@ export function ManageDonationModal({
   recordType = RecordType.PROJECT,
 }: ManageModalProps) {
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const networks = useTestableNetworks();
   const [isEditing, setIsEditing] = useState(false);
   const [isWithdrawing, setIsWithdrawing] = useState(false);
@@ -124,7 +124,7 @@ export function ManageDonationModal({
       : theme.palette.text.secondary;
 
   const _useSohmBalance =
-    useSohmBalance()[isChainEthereum({ chainId: chain.id, includeTestnets: true }) ? networks.MAINNET : 1];
+    useSohmBalance()[isChainEthereum({ chainId: chain.id, includeTestnets: true }) ? networks.MAINNET : 180];
   const sohmBalance: DecimalBigNumber = useMemo(() => {
     if (_useSohmBalance.isLoading || _useSohmBalance.data === undefined) return new DecimalBigNumber("0");
 
@@ -133,7 +133,7 @@ export function ManageDonationModal({
 
   // Setting this to only read Ethereum or Ethereum testnet balances, but not sure if that is the right behavior
   const _useGohmBalance =
-    useGohmBalance()[isChainEthereum({ chainId: chain.id, includeTestnets: true }) ? networks.MAINNET : 1];
+    useGohmBalance()[isChainEthereum({ chainId: chain.id, includeTestnets: true }) ? networks.MAINNET : 180];
 
   const gohmBalance: DecimalBigNumber = useMemo(() => {
     if (_useGohmBalance.isLoading || _useGohmBalance.data == undefined) return new DecimalBigNumber("0");

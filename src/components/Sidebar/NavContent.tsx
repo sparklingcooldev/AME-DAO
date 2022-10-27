@@ -25,7 +25,7 @@ const StyledBox = styled(Box)(({ theme }) => ({
 }));
 
 const NavContent: React.VFC = () => {
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const networks = useTestableNetworks();
 
   return (

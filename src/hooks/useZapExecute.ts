@@ -44,7 +44,7 @@ export const useZapExecute = () => {
   const client = useQueryClient();
   const { data: signer } = useSigner();
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   return useMutation<ContractReceipt, EthersError, ZapExecuteOptions>(
     /**

@@ -135,8 +135,8 @@ export function LargeWallet() {
     <LargeGraphic
       icon={<Icon name="vault-wallet" fontSize="large" />}
       title={t`Wallet`}
-      subtitle={t`Deposit sOHM from wallet`}
-      subtext={t`Olympus Give is a means of directing the yield that is accrued on your sOHM to another wallet. The first step is depositing your sOHM and specifying a recipient.`}
+      subtitle={t`Deposit sAME from wallet`}
+      subtext={t`Olympus Give is a means of directing the yield that is accrued on your sAME to another wallet. The first step is depositing your sAME and specifying a recipient.`}
     />
   );
 }
@@ -146,9 +146,9 @@ export function LargeVault() {
     <LargeGraphic
       icon={<Icon name="vault-lock" fontSize="large" />}
       title={t`Vault`}
-      subtitle={t`Lock sOHM in vault`}
-      subtext={t`Then, your deposited sOHM is kept in a vault smart contract that will send your rebases to the recipient.
-      You can withdraw or edit your principal sOHM amount at any time.`}
+      subtitle={t`Lock sAME in vault`}
+      subtext={t`Then, your deposited sAME is kept in a vault smart contract that will send your rebases to the recipient.
+      You can withdraw or edit your principal sAME amount at any time.`}
     />
   );
 }
@@ -158,9 +158,9 @@ export function LargeYield() {
     <LargeGraphic
       icon={<Icon name="vault-recipient" fontSize="large" />}
       title={t`Recipient`}
-      subtitle={t`Recipient earns sOHM rebases`}
+      subtitle={t`Recipient earns sAME rebases`}
       subtext={t`The recipient you specified, or the project you selected, will then receive the rebases associated with your
-      sOHM deposit until you withdraw your sOHM principal from the vault.`}
+      sAME deposit until you withdraw your sAME principal from the vault.`}
     />
   );
 }

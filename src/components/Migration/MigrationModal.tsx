@@ -27,7 +27,7 @@ function MigrationModal({ open, handleClose }: { open: boolean; handleClose: any
   const { address = "" } = useAccount();
   const provider = useProvider();
   const { data: signer } = useSigner();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   const {
     view,
@@ -84,7 +84,7 @@ function MigrationModal({ open, handleClose }: { open: boolean; handleClose: any
   };
   rows = [
     {
-      initialAsset: "OHM",
+      initialAsset: "AME",
       initialBalance: currentOhmBalance,
       targetAsset: targetAsset,
       targetBalance: ohmAsgOHM * targetMultiplier,
@@ -92,7 +92,7 @@ function MigrationModal({ open, handleClose }: { open: boolean; handleClose: any
       usdBalance: ohmInUSD,
     },
     {
-      initialAsset: "sOHM",
+      initialAsset: "sAME",
       initialBalance: currentSOhmBalance,
       targetAsset: targetAsset,
       targetBalance: sOHMAsgOHM * targetMultiplier,
@@ -100,7 +100,7 @@ function MigrationModal({ open, handleClose }: { open: boolean; handleClose: any
       usdBalance: sOhmInUSD,
     },
     {
-      initialAsset: "wsOHM",
+      initialAsset: "wsAME",
       initialBalance: currentWSOhmBalance,
       targetAsset: targetAsset,
       targetBalance: +currentWSOhmBalance * targetMultiplier,

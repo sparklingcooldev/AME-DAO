@@ -12,7 +12,7 @@ import { useNetwork } from "wagmi";
 
 const Wrap: React.FC = () => {
   const networks = useTestableNetworks();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const isMigrating = chain.id === networks.ARBITRUM || chain.id === networks.AVALANCHE;
 
   return (

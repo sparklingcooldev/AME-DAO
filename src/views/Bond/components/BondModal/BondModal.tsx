@@ -22,7 +22,7 @@ import { useAccount, useNetwork } from "wagmi";
 
 export const BondModalContainer: React.VFC = () => {
   const navigate = useNavigate();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { id } = useParams<{ id: string }>();
   usePathForNetwork({ pathName: "bonds", networkID: chain.id, navigate });
 

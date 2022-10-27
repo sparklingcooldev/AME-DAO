@@ -48,7 +48,7 @@ export function RecipientModal({
   project,
 }: RecipientModalProps) {
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const _initialDepositAmount = "";
   const _initialWalletAddress = "";
   const _initialDepositAmountValid = false;

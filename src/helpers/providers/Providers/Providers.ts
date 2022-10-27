@@ -1,5 +1,5 @@
 import { StaticJsonRpcProvider } from "@ethersproject/providers";
-import { Environment } from "src/helpers/environment/Environment/Environment";
+// import { Environment } from "src/helpers/environment/Environment/Environment";
 import { NetworkId } from "src/networkDetails";
 
 export class Providers {
@@ -9,9 +9,10 @@ export class Providers {
    * Returns a provider url for a given network
    */
   public static getProviderUrl(networkId: NetworkId) {
-    const [url] = Environment.getNodeUrls(networkId);
+    // const [url] = Environment.getNodeUrls(networkId);
 
-    return url;
+    // return url;
+    return "";
   }
 
   /**

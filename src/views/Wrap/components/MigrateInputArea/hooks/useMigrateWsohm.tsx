@@ -18,7 +18,7 @@ export const useMigrateWsohm = () => {
   const balances = useBalance(WSOHM_ADDRESSES);
 
   const { address = "" } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   const contract = useDynamicMigratorContract(MIGRATOR_ADDRESSES, true);
 

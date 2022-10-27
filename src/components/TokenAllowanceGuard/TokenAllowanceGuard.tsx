@@ -63,7 +63,7 @@ export const TokenAllowanceGuard: React.FC<{
   const approveMutation = useApproveToken(tokenAddressMap, spenderAddressMap);
   const { data: allowance } = useContractAllowance(tokenAddressMap, spenderAddressMap);
 
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { data: balance = new DecimalBigNumber("0") } = useBalance(tokenAddressMap)[
     chain.id as keyof typeof tokenAddressMap
   ] || { data: new DecimalBigNumber("0") };
@@ -107,7 +107,7 @@ export const GiveTokenAllowanceGuard: React.FC<{
   const approveMutation = useApproveToken(props.tokenAddressMap, props.spenderAddressMap);
   const _useContractAllowance = useContractAllowance(props.tokenAddressMap, props.spenderAddressMap);
 
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { data: balance = new DecimalBigNumber("0") } = useBalance(props.tokenAddressMap)[
     chain.id as keyof typeof props.tokenAddressMap
   ] || { data: new DecimalBigNumber("0") };

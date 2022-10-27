@@ -17,7 +17,7 @@ export const contractAllowanceQueryKey = (
 export const useContractAllowance = (tokenMap: AddressMap, contractMap: AddressMap) => {
   const token = useDynamicTokenContract(tokenMap);
   const { address = "", isConnected } = useAccount();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   const key = contractAllowanceQueryKey(address, chain.id, tokenMap, contractMap);
   return useQuery<BigNumber | null, Error>(

@@ -19,10 +19,10 @@ import {
   PARAM_TOKEN_GOHM,
   PARAM_TOKEN_OHM,
 } from "src/views/TreasuryDashboard/components/Graph/Constants";
-import { LiquidBackingPerOhmComparisonGraph } from "src/views/TreasuryDashboard/components/Graph/LiquidBackingComparisonGraph";
-import { ProtocolOwnedLiquidityGraph } from "src/views/TreasuryDashboard/components/Graph/OwnedLiquidityGraph";
-import { TreasuryAssets } from "src/views/TreasuryDashboard/components/Graph/TreasuryAssets";
-import KnownIssues from "src/views/TreasuryDashboard/components/KnownIssues/KnownIssues";
+// import { LiquidBackingPerOhmComparisonGraph } from "src/views/TreasuryDashboard/components/Graph/LiquidBackingComparisonGraph";
+// import { ProtocolOwnedLiquidityGraph } from "src/views/TreasuryDashboard/components/Graph/OwnedLiquidityGraph";
+// import { TreasuryAssets } from "src/views/TreasuryDashboard/components/Graph/TreasuryAssets";
+// import KnownIssues from "src/views/TreasuryDashboard/components/KnownIssues/KnownIssues";
 import {
   AbstractedMetricProps,
   BackingPerGOHM,
@@ -220,7 +220,7 @@ const MetricsDashboard = () => {
           </Grid>
           {hideToggleSidePadding ? <></> : <Grid item xs={3} sm={4} />}
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Paper {...paperProps} style={paperStyles}>
             <LiquidBackingPerOhmComparisonGraph
               subgraphUrls={subgraphUrls}
@@ -229,13 +229,13 @@ const MetricsDashboard = () => {
               subgraphDaysOffset={daysOffset}
             />
           </Paper>
-        </Grid>
-        <Grid item xs={12}>
+        </Grid> */}
+        {/* <Grid item xs={12}>
           <Paper {...paperProps} style={paperStyles}>
             <TreasuryAssets subgraphUrls={subgraphUrls} earliestDate={earliestDate} subgraphDaysOffset={daysOffset} />
           </Paper>
-        </Grid>
-        <Grid item xs={12}>
+        </Grid> */}
+        {/* <Grid item xs={12}>
           <Paper {...paperProps} style={paperStyles}>
             <ProtocolOwnedLiquidityGraph
               subgraphUrls={subgraphUrls}
@@ -243,12 +243,12 @@ const MetricsDashboard = () => {
               subgraphDaysOffset={daysOffset}
             />
           </Paper>
-        </Grid>
-        <Grid item xs={12}>
+        </Grid> */}
+        {/* <Grid item xs={12}>
           <Paper {...paperProps} style={paperStyles}>
             <KnownIssues />
           </Paper>
-        </Grid>
+        </Grid> */}
       </Grid>
       <SafariFooter />
     </>

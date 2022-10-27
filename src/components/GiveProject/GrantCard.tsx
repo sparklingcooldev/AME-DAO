@@ -56,7 +56,7 @@ const DEFAULT_FORMAT = { decimals: DECIMAL_PLACES, format: true };
 const NO_DECIMALS_FORMAT = { decimals: 0, format: true };
 
 export default function GrantCard({ grant, giveAssetType, changeAssetType, mode }: GrantDetailsProps) {
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { address = "" } = useAccount();
 
   const { title, owner, shortDescription, details, photos, wallet, milestones, latestMilestoneCompleted } = grant;

@@ -86,7 +86,7 @@ export interface OHMAssetsProps {
 const AssetsIndex: FC<OHMAssetsProps> = (props: { path?: string }) => {
   const navigate = useNavigate();
   const networks = useTestableNetworks();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { data: ohmPrice = 0 } = useOhmPrice();
   const { data: priceFeed = { usd_24h_change: -0 } } = GetTokenPrice();
   const { data: currentIndex = new DecimalBigNumber("0", 9) } = useCurrentIndex();

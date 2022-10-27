@@ -25,7 +25,7 @@ import useTheme from "src/hooks/useTheme";
 import { chains } from "src/hooks/wagmi";
 import { getMigrationAllowances, loadAccountDetails } from "src/slices/AccountSlice";
 import { loadAppDetails } from "src/slices/AppSlice";
-import { error } from "src/slices/MessagesSlice";
+// import { error } from "src/slices/MessagesSlice";
 import { AppDispatch } from "src/store";
 import { dark as darkTheme } from "src/themes/dark.js";
 import { girth as gTheme } from "src/themes/girth.js";
@@ -117,7 +117,7 @@ function App() {
   const { error: errorMessage } = useConnect();
 
   const provider = useProvider();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   const [migrationModalOpen, setMigrationModalOpen] = useState(false);
   const migModalClose = () => {
@@ -167,24 +167,24 @@ function App() {
   // ... we don't try to fire Api Calls on initial load because web3Context is not set yet
   // ... if we don't wait we'll ALWAYS fire API calls via JsonRpc because provider has not
   // ... been reloaded within App.
-  useEffect(() => {
-    // if (shouldTriggerSafetyCheck()) {
-    //   dispatch(info("Safety Check: Always verify you're on app.olympusdao.finance!"));
-    // }
-    loadDetails("app");
-  }, []);
+  // useEffect(() => {
+  //   // if (shouldTriggerSafetyCheck()) {
+  //   //   dispatch(info("Safety Check: Always verify you're on app.olympusdao.finance!"));
+  //   // }
+  //   loadDetails("app");
+  // }, []);
 
   // this useEffect picks up any time a user Connects via the button
-  useEffect(() => {
-    // don't load ANY details until wallet is Connected
-    if (isConnected && provider) {
-      loadDetails("account");
-    }
-  }, [isConnected, chain.id, provider]);
+  // useEffect(() => {
+  //   // don't load ANY details until wallet is Connected
+  //   if (isConnected && provider) {
+  //     loadDetails("account");
+  //   }
+  // }, [isConnected, chain.id, provider]);
 
-  useEffect(() => {
-    if (errorMessage) dispatch(error(errorMessage.message));
-  }, [errorMessage]);
+  // useEffect(() => {
+  //   if (errorMessage) dispatch(error(errorMessage.message));
+  // }, [errorMessage]);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);

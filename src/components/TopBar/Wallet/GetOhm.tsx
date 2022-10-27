@@ -63,7 +63,7 @@ const StyledBox = styled(Box)(() => ({
  * Component for Displaying GetOhm
  */
 const GetOhm: FC = () => {
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   const { data: supplyRate } = SupplyRatePerBlock();
   const { data: rebaseRate = 0 } = useStakingRebaseRate();
   const ethMantissa = 1e18;

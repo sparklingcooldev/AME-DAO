@@ -24,7 +24,7 @@ import { useNetwork } from "wagmi";
 
 function Give({ selectedIndex = 0 }) {
   const [giveAssetType, setGiveAssetType] = useState<"sOHM" | "gOHM">("sOHM");
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
 
   const v1RedeemableBalance = useV1RedeemableBalance();
   const hasV1Assets = v1RedeemableBalance.data && v1RedeemableBalance.data != "0.0";

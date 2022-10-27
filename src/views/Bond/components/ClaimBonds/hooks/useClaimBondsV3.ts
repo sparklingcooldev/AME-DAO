@@ -18,7 +18,7 @@ export const useClaimBondsV3 = () => {
   const networks = useTestableNetworks();
   const { address = "" } = useAccount();
   const { data: signer } = useSigner();
-  const { chain = { id: 1 } } = useNetwork();
+  const { chain = { id: 180 } } = useNetwork();
   return useMutation<ContractReceipt, EthersError, { token: string; amount: DecimalBigNumber }>(
     async ({ token, amount }) => {
       if (!signer) throw new Error(t`Please connect a wallet to claim bonds`);
