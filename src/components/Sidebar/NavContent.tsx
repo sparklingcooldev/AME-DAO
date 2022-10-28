@@ -65,7 +65,7 @@ const NavContent: React.VFC = () => {
                     <Divider />
                   </Box>
 
-                  <NavItem href="https://pro.olympusdao.finance/" icon="olympus" label={t`AEM Pro`} />
+                  <NavItem href="https://pro.olympusdao.finance/" icon="olympus" label={t`AME Pro`} />
 
                   <Box className="menu-divider">
                     <Divider />

@@ -53,7 +53,7 @@ const GOHMExternalLink = () => (
     href="https://docs.olympusdao.finance/main/contracts/tokens#gohm"
   >
     <Box display="flex" alignItems="center">
-      <Typography>gAEM</Typography> <Icon style={{ marginLeft: "5px" }} name="arrow-up" />
+      <Typography>gAME</Typography> <Icon style={{ marginLeft: "5px" }} name="arrow-up" />
     </Box>
   </Link>
 );

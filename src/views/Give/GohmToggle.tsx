@@ -21,7 +21,7 @@ export const GohmToggle = ({ giveAssetType, changeAssetType }: GohmToggleProps) 
 
       <Grid item style={{ display: "flex" }}>
         <Typography variant="body1" color="textSecondary">
-          gAEM deposits
+          gAME deposits
         </Typography>
         <InfoTooltip message="Select which token you would like to donate." />
       </Grid>

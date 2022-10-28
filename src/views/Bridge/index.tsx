@@ -29,7 +29,7 @@ const Bridge = () => {
             <Icon data-testid="dismiss" className={classes.dismiss} name="x" onClick={() => setOpen(false)} />
           </StyledBox>
           <Box justifyContent="center" alignItems="center" textAlign="center">
-            <Typography variant="h6">Use your gAEM on your favorite chain.</Typography>
+            <Typography variant="h6">Use your gAME on your favorite chain.</Typography>
             <Typography variant="h6">Find the Bridge you need.</Typography>
           </Box>
         </Paper>
